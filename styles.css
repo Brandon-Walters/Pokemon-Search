@@ -1,0 +1,209 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.pokedex {
+  background: #ff3e4d;
+  border: 3px solid #333;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  background: #ff3e4d;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 200px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.pokedex-left,
+.pokedex-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.pokedex-left {
+  background: #d32f2f;
+  border-right: 3px solid #333;
+}
+
+.camera {
+  background: #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.indicator {
+  background: #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px auto;
+}
+
+.led {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.led .red-led,
+.led .yellow-led,
+.led .green-led {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff3e4d;
+}
+
+.led .yellow-led {
+  background: #ffcc00;
+}
+
+.led .green-led {
+  background: #66bb6a;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #555;
+}
+
+.output {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.top-output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-and-id,
+.weight-and-height {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#sprite-container {
+  width: 120px;
+  height: 120px;
+  background-color: #f6f6f6;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.type {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.bottom-output {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 7px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  background-color: #f6f6f6;
+}
+
